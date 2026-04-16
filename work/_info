@@ -1,0 +1,80 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+valu
+!s110 1776355423
+!i10b 1
+!s100 Q6Z34R?PG]ngDCo`7O0]@3
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ILMOi^E9@i4_CAoaWlnI^z1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Verilog/ex_stage
+w1776330806
+8D:/Verilog/alu/alu.v
+FD:/Verilog/alu/alu.v
+!i122 44
+L0 1 49
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z4 !s108 1776355422.000000
+!s107 D:/Verilog/alu/alu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Verilog/alu/alu.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vex_stage
+Z7 !s110 1776355422
+!i10b 1
+!s100 ]aA]fMJC]8McEMmoU5W_f2
+R0
+IThCJd]Gol^;_Sl9ijl@JZ3
+R1
+R2
+w1776335083
+8D:/Verilog/ex_stage/ex_stage.v
+FD:/Verilog/ex_stage/ex_stage.v
+!i122 42
+L0 1 32
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Verilog/ex_stage/ex_stage.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Verilog/ex_stage/ex_stage.v|
+!i113 1
+R5
+R6
+vtb_ex_stage
+R7
+!i10b 1
+!s100 _oL`^c>R:M5V>1cXP1^R[0
+R0
+I2Nj9h^Jnh^V@nJhK;UBk31
+R1
+R2
+w1776355417
+8D:/Verilog/ex_stage/tb_ex_stage.v
+FD:/Verilog/ex_stage/tb_ex_stage.v
+!i122 43
+L0 3 72
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Verilog/ex_stage/tb_ex_stage.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Verilog/ex_stage/tb_ex_stage.v|
+!i113 1
+R5
+R6

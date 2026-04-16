@@ -1,0 +1,75 @@
+`timescale 1ns/1ps
+
+module tb_ex_stage;
+
+    reg [31:0] rs1, rs2, imm, pc;
+    reg [3:0]  alu_sel;
+    reg        a_sel, b_sel;
+
+    wire [31:0] alu_result;
+    wire        zero;
+    wire [31:0] pc_next;
+
+    ex_stage uut (
+        .rs1(rs1),
+        .rs2(rs2),
+        .imm(imm),
+        .pc(pc),
+        .alu_sel(alu_sel),
+        .a_sel(a_sel),
+        .b_sel(b_sel),
+        .alu_result(alu_result),
+        .zero(zero),
+        .pc_next(pc_next)
+    );
+
+    localparam ALU_ADD  = 4'b0000;
+    localparam ALU_SUB  = 4'b0001;
+
+    initial begin
+        $display("Start EX stage test");
+
+
+        // R-type: ADD rs1 + rs2
+        rs1 = 10; rs2 = 20; 
+	pc = 100; 	//consider quit pc
+        a_sel = 0;
+        b_sel = 0;
+        alu_sel  = ALU_ADD;
+        #10;
+
+        // I-type: ADDI rs1 + imm
+        rs1 = 10; imm = 9; 
+        a_sel = 0;
+        b_sel = 1;
+        alu_sel  = ALU_ADD;
+        #10;
+
+        // Branch: BEQ (rs1 + rs2)
+        rs1 = 15; rs2 = 15; imm = 12;
+        a_sel = 0;
+        b_sel = 0;
+        alu_sel  = ALU_ADD;
+	// zero = 1 : branch taken
+        #10;
+        
+
+        // PC + imm (branch target)
+        pc  = 112;
+        imm = 16;
+        #10;
+
+        // AUIPC: pc + imm (qua ALU)
+        pc  = 1000;
+        imm = 200;
+        a_sel = 1; 
+        b_sel = 1; 
+        alu_sel  = ALU_ADD;
+        #10;
+
+        $display("Finish EX stage test");
+        $stop;
+    end
+
+endmodule
+
