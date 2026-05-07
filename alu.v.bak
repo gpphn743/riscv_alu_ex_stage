@@ -6,7 +6,7 @@ module alu (
     output zero
 );
 
-    // ALUSel
+    // ALU select
     localparam ALU_ADD  = 4'b0000;
     localparam ALU_SUB  = 4'b0001;
     localparam ALU_AND  = 4'b0010;
@@ -17,6 +17,15 @@ module alu (
     localparam ALU_SRA  = 4'b0111;
     localparam ALU_SLT  = 4'b1000;
     localparam ALU_SLTU = 4'b1001;
+//    localparam ALU_ADDI = 4'b1001;
+//    localparam ALU_ANDI = 4'b1001;
+//    localparam ALU_ORI  = 4'b1001;
+//    localparam ALU_SLLI = 4'b1001;
+//    localparam ALU_SRLI = 4'b1001;
+//    localparam ALU_SRAI = 4'b1001;
+//    localparam ALU_SLTI = 4'b1001;
+//    localparam ALU_SLTIU= 4'b1001;
+//    localparam ALU_SLTU = 4'b1001;
 
 
     always @(*) begin

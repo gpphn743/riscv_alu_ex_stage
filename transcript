@@ -1,4 +1,68 @@
-# Compile of ex_stage.v was successful.
-# Compile of tb_ex_stage.v was successful.
 # Compile of alu.v was successful.
-# 3 compiles, 0 failed with no errors.
+# Compile of tb_alu.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of alu.v was successful.
+# Compile of tb_alu.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of alu.v was successful.
+# Compile of tb_alu.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.tb_alu
+# vsim work.tb_alu 
+# Start time: 03:24:48 on May 08,2026
+# Loading work.tb_alu
+# Loading work.alu
+# ** Error: (vsim-3063) Port 'a' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_alu/uut File: D:/Verilog/alu/tb_alu.v Line: 12
+# ** Error: (vsim-3063) Port 'b' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_alu/uut File: D:/Verilog/alu/tb_alu.v Line: 12
+# Error loading design
+# End time: 03:24:48 on May 08,2026, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 4
+# Compile of alu.v was successful.
+# Compile of tb_alu.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.tb_alu
+# vsim work.tb_alu 
+# Start time: 03:26:06 on May 08,2026
+# Loading work.tb_alu
+# Loading work.alu
+add wave sim:/tb_alu/*
+run -all
+# Start ALU simulation
+# Finish ALU simulation
+# ** Note: $stop    : D:/Verilog/alu/tb_alu.v(153)
+#    Time: 300 ns  Iteration: 0  Instance: /tb_alu
+# Break in Module tb_alu at D:/Verilog/alu/tb_alu.v line 153
+quit -sim
+# End time: 03:26:58 on May 08,2026, Elapsed time: 0:00:52
+# Errors: 0, Warnings: 2
+# Compile of alu.v was successful.
+# Compile of tb_alu.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.tb_alu
+# vsim work.tb_alu 
+# Start time: 03:41:44 on May 08,2026
+# Loading work.tb_alu
+# Loading work.alu
+add wave sim:/tb_alu/*
+run -all
+# ** Note: $stop    : D:/Verilog/alu/tb_alu.v(157)
+#    Time: 300 ns  Iteration: 0  Instance: /tb_alu
+# Break in Module tb_alu at D:/Verilog/alu/tb_alu.v line 157
+quit -sim
+# End time: 03:43:54 on May 08,2026, Elapsed time: 0:02:10
+# Errors: 0, Warnings: 2
+# Compile of alu.v was successful.
+# Compile of tb_alu.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.tb_alu
+# vsim work.tb_alu 
+# Start time: 03:46:45 on May 08,2026
+# Loading work.tb_alu
+# Loading work.alu
+add wave sim:/tb_alu/*
+run -all
+# ** Note: $stop    : D:/Verilog/alu/tb_alu.v(157)
+#    Time: 100 ns  Iteration: 0  Instance: /tb_alu
+# Break in Module tb_alu at D:/Verilog/alu/tb_alu.v line 157
